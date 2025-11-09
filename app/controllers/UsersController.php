@@ -173,6 +173,7 @@ class UsersController extends Controller
             <style>
                 body { font-family: DejaVu Sans, sans-serif; margin: 40px; }
                 h1 { text-align: center; }
+                p { text-align: center; }
                 table { width: 100%; border-collapse: collapse; margin-top: 20px; }
                 td, th { border: 1px solid #ddd; padding: 8px; }
                 th { background-color: #f2f2f2; text-align: left; }
@@ -195,6 +196,7 @@ class UsersController extends Controller
             </table>
 
             <div class="footer">
+                <p>23.808.201/0001-15</p>
                 <p>Gerado automaticamente pelo sistema OSFácil - ' . date('d/m/Y H:i') . '</p>
                 <br>
                 <br>

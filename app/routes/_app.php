@@ -18,4 +18,3 @@ app()->post('/os/salvar', "UsersController@Ossalvar");
 app()->get('/os/listar', "UsersController@Oslistar");
 app()->get('/os/exportar/{id}', 'UsersController@OsExportarPDF');
 app()->post('/os/deletar/{id}', 'UsersController@Osdeletar');
-
