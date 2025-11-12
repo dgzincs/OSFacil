@@ -6,10 +6,12 @@ app()->get('/', 'UsersController@index');
 app()->get('/cliente', "UsersController@cliente");
 app()->post('/cliente/salvar', "UsersController@Clientesalvar");
 app()->get('/cliente/listar', "UsersController@ClienteListar");
+app()->post('/cliente/deletar/{id}', "UsersController@Clientedeletar");
 
 app()->get('/vendedor', "UsersController@vendedor");
 app()->post('/vendedor/salvar', "UsersController@Vendedorsalvar");
 app()->get('/vendedor/listar', "UsersController@Vendedorlistar");
+app()->post('/vendedor/deletar/{id}', "UsersController@Vendedordeletar");
 
 app()->get('/produto', "UsersController@produto");
 

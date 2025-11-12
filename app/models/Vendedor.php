@@ -46,4 +46,9 @@ class Vendedor extends Model
     public function listar(){
         return db()->select('vendedores')->all();
     }
+
+    public function deletar($id)
+    {
+        return db()->delete('vendedores')->where('id', $id)->execute();
+    }
 }

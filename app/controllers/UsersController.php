@@ -50,6 +50,15 @@ class UsersController extends Controller
         ]);
     }
 
+    public function Clientedeletar($id){
+        $clienteModel = new Cliente();
+        $clienteModel->deletar($id);
+
+        $clientes = $clienteModel->listar();
+        response()->render('clienteListar', [
+            'clientes' => $clientes
+        ]);
+    }
 
     public function vendedor(){
         response()->render('vendedor');
@@ -90,8 +99,14 @@ class UsersController extends Controller
         ]);
     }
 
-    public function produto(){
-        response()->render('produto');
+    public function Vendedordeletar($id){
+        $vendedorModel = new Vendedor();
+        $vendedorModel->deletar($id);
+
+        $vendedores = $vendedorModel->listar();
+        response()->render('Vendedorlistar', [
+            'vendedores' => $vendedores
+        ]);
     }
 
     public function os(){

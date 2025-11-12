@@ -28,6 +28,15 @@
                             <td class="border px-4 py-2">{{ $vendedor['cpf'] }}</td>
                             <td class="border px-4 py-2">{{ $vendedor['admissao'] }}</td>
                             <td class="border px-4 py-2">{{ $vendedor['observacoes'] }}</td>
+                            <td class="border px-4 py-2">
+                                <form action="/vendedor/deletar/{{ $vendedor['id'] }}" method="POST" class="inline">
+                                    <button type="submit"
+                                        onclick="return confirm('Tem certeza que deseja deletar esse vendedor?')"
+                                        class="px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition">
+                                        Deletar
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>

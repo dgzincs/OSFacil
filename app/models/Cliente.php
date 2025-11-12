@@ -45,4 +45,9 @@ class Cliente extends Model
     {
         return db()->select('clientes')->all();
     }
+
+    public function deletar($id)
+    {
+        return db()->delete('clientes')->where('id', $id)->execute();
+    }
 }
