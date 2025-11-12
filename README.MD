@@ -1,39 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README documents the steps necessary to get the application up and running.
 
-Things you may want to cover:
+---
 
 ## App Info
 
-Created with Leaf MVC v4 + Leaf v4
+Created with **Leaf MVC v4 + Leaf v4**
 
-## Installation
+---
 
-You can set up your dependencies by running:
+## ⚙️ Installation
+
+### First, clone this repository to your local machine:
 
 ```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+
+### Then navigate to the project directory:
+cd seu-repositorio
+
+### Install all project dependencies with Composer:
 composer install
-```
 
-## System dependencies
+### Create a .env file in the root directory of your project and configure your environment variables based on the .env.example file:
+cp .env.example .env
 
-To run this application, you need to have:
-
-- PHP 7.4 or higher
-- Composer
-
-## Configuration
-
-## Database creation
-
-To create your database, you can run:
-
-```bash
-php leaf db:migrate
-```
-
-## Deployment instructions
-
-Check out the [Leaf documentation](https://leafphp.dev/learn/deployment/) for more information on how to deploy your Leaf app.
+### You can start the local development server with:
+leaf serve
